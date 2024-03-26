@@ -1,0 +1,27 @@
+// QN 3: fibonacii Series
+#include <stdio.h>
+
+int fibo(n){
+     if(n==0){
+     return 0;     
+     }
+     else if(n==1){
+     return 1;     
+     }
+     else{
+     return fibo(n-1)+fibo(n-2);    
+     } 
+}
+
+int main(){
+     int n;
+     printf("Enter number: ");
+     scanf("%d",&n);
+     
+     int i=0;
+     while(fibo(i)<=n){
+     printf("%d,",fibo(i));
+     i++;  
+     }
+return 0;
+}
